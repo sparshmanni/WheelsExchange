@@ -1,0 +1,244 @@
+/* Reset some default styles */
+
+.welcome{
+    text-align: center;
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+nav {
+    background-color: #34a853; /* Google Green */
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth Color Transition */
+}
+
+nav a:hover {
+    color: #e65100; /* Google Amber on Hover */
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 1em 0;
+    }
+}
+
+
+
+
+/* Add these styles for forms */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0044cc; /* Google Dark Blue on Hover */
+}
+
+/* Responsive Design for Forms */
+@media (max-width: 768px) {
+    form {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+.listhead{
+    margin-left: 50px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: #007BFF;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+/* Style for the user dropdown */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the user logo */
+.user-logo img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Style for the user menu */
+.user-menu {
+    display: inline-block;
+}
+
+/* Style for the username */
+.username {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Add these styles for the dropdown */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.user-menu:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+
+/* Style for the container of listing cards (flexbox) */
+.listing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+/* Rest of the styles remain the same */
+.listing-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(33.33% - 20px); /* Adjust the width and gap as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the image within the listing card */
+.listing-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.listing-details {
+    margin-top: 10px;
+}
+
+.listing-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.listing-details p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
